@@ -1,0 +1,30 @@
+{
+    "manifest_version": 3,
+    "name": "Zex manipulations",
+    "description": "...",
+    "version": "1.0.0",
+    "icons": {
+        "96": "/images/zex.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://web.whatsapp.com/"
+            ],
+            "js": [
+                "/js/Content.js",
+                "/js/strategy/StrategyManager.js",
+                "/js/strategy/strategies/ButtonStrategy.js",
+                "/js/strategy/strategies/CanvasStrategy.js",
+                "/js/strategy/strategies/DownloadStrategy.js",
+                "/js/strategy/strategies/EncaminharMensagemStrategy.js",
+                "/js/strategy/strategies/ImagemStrategy.js",
+                "/js/strategy/strategies/LinkStrategy.js"
+            ]
+        }
+    ],
+    "action": {
+        "default_popup": "Popup.html",
+        "default_title": "Zex manipulations"
+    }
+}
