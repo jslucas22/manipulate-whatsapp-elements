@@ -4,15 +4,15 @@ class CanvasStrategy {
     }
 
     tratarSeletorCanvas() {
-        var elements = document
-            .getElementsByTagName('canvas');
+        var elements = document.getElementById('main').getElementsByTagName('canvas');
 
-        if (elements != null) {
-            for (var i = elements.length; i-- > 0;) {
-                var element = elements[i];
-                element
-                    .remove();
+        if (elements != null)
+            if (elements != null) {
+                for (var i = elements.length; i-- > 0;) {
+                    var element = elements[i];
+                    element
+                        .remove();
+                }
             }
-        }
     }
 }
