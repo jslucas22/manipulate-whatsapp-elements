@@ -11,8 +11,7 @@ class CanvasStrategy {
             for (var i = elements.length; i-- > 0;) {
                 var element = elements[i];
                 element
-                    .parentElement
-                    .remove(element);
+                    .remove();
             }
         }
     }
