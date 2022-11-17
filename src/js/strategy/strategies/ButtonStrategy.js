@@ -2,6 +2,7 @@ class ButtonStrategy {
     manipulate() {
         this.tratarSeletorDocThumb();
         this.tratarSeletorUrl();
+        this.tratarSeletorAudioPlay();
     }
 
     tratarSeletorDocThumb() {
@@ -17,6 +18,15 @@ class ButtonStrategy {
 
     tratarSeletorUrl() {
         var botaoUrlElements = document.querySelectorAll('[data-testid=url-element]');
+        for (let element of botaoUrlElements) {
+            element
+                .parentElement
+                .remove(element);
+        }
+    }
+
+    tratarSeletorAudioPlay() {
+        var botaoUrlElements = document.querySelectorAll('[data-testid=audio-play]');
         for (let element of botaoUrlElements) {
             element
                 .parentElement
